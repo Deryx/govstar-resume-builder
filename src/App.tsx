@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import ResumeInstructions from './components/ResumeInstructions/ResumeInstructions';
+import ResumeUpload from './components/ResumeUpload/ResumeUpload';
+import ResumeInput from './components/ResumeInput/ResumeInput';
 import './App.css';
 
 function App() {
+  const [showInstructions, setShowInstructions] = useState<boolean>(true);
+  const [showResumeInput, setShowResumeInput] = useState<boolean>(false);
+  const [showResumeUpload, setShowResumeUpload] = useState<boolean>(false);
+
+  const handleResumeUploadClick = () => {
+    setShowResumeUpload(true);
+    setShowResumeInput(false);
+    setShowInstructions(false);
+  };
+
+  const handleResumeInputClick = () => {
+    setShowResumeInput(true);
+    setShowResumeUpload(false);
+    setShowInstructions(false);
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className='resume-builder'>
+      <h1>GovStar Resume Generator</h1>
+
+      { showInstructions && <ResumeInstructions handleUploadClick={ handleResumeUploadClick } handleInputClick={ handleResumeInputClick } /> }
+      { showResumeUpload && <ResumeUpload /> }
+      { showResumeInput && <ResumeInput />}
+    </section>
   );
 }
 

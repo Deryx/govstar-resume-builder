@@ -1,0 +1,60 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    .upload-instructions {
+        margin-bottom: 2rem;
+        border-radius: 15px;
+        background-color: #FFF;
+        padding: 1.5rem;
+        border: 1px solid #000;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    }
+
+    .resume-upload {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .upload {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+
+            label {
+                margin-right: 10px;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+
+            .file-upload {
+                border: 1px solid #ccc;
+                display: inline-block;
+                padding: 6px 12px;
+                cursor: pointer;
+                width: 40%;
+            }
+        }
+
+        .submit-button {
+            margin-top: 1.5rem;
+            text-align: center;
+
+            input {
+                background-color: #4CAF50;
+                border: none;
+                color: #FFF;
+                padding: 10px 20px;
+                font-size: 1.25rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

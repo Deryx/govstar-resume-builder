@@ -1,0 +1,56 @@
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #CCC;
+        margin: 0;
+        background-color: rgba(204, 204, 204, 0.8);
+
+
+        .section-title {
+            align-self: flex-start;
+            width: 95%;
+
+            label {
+                width: 100%;
+                font-weight: bold;
+                text-transform: capitalize;
+                padding-left: 10px;
+            }
+        }
+
+        .delete-section {
+            width: 5%;
+            align-self: flex-end;
+
+            button {
+                background-color: #FF0000;
+                color: #FFFFFF;
+                border: none;
+                cursor: pointer;
+                padding: 5px 10px;
+                align-self: flex-end;
+            }
+        }
+    }
+
+    .content {
+        width: 95%;
+
+        textarea {
+            box-sizing: border-box;
+            border-top: none;
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+        }
+    }
+}

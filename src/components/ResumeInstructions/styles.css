@@ -1,0 +1,34 @@
+.instructions {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+
+    button {
+        width: 45%;
+        height: 200px;
+        margin: 0 1.5rem;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #CCC;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .instruction {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .tagline {
+            font-size: 1rem;
+        }
+    }
+}
