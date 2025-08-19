@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import '../ProgressIndicator/styles.css';
+import './styles.css';
 
 const ProgressIndicator: FC = () => {
     return (

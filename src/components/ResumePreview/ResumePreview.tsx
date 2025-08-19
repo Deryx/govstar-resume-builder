@@ -1,5 +1,5 @@
 import React, { FC, MouseEvent } from 'react';
-import '../ResumePreview/styles.css';
+import './styles.css';
 
 interface ResumePreviewProps {
     sections: { [key: string]: string };

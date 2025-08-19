@@ -1,7 +1,9 @@
-.progressIndicator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 50vh;
-};
+.resume-builder {
+    .progressIndicator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 50vh;
+    }
+}
