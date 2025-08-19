@@ -3,9 +3,11 @@ import './styles.scss';
 
 const ProgressIndicator: FC = () => {
     return (
-        <div className="progressIndicator">
-            <h2>Please wait while generating your resume...</h2>
-        </div>
+        <>
+            <div className="progressIndicator">
+                <h2>Please wait while generating your resume...</h2>
+            </div>
+        </>
     );
 };
 
